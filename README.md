@@ -1,7 +1,3 @@
-# L-Ruby
-Ruby的学习日记
-
-
 D1					2020.6.16
 BEGIN/END{
 code
@@ -43,3 +39,26 @@ equal?有相同的对象id
 逻辑运算符
 and or 操作数为真
 && ||操作数非零
+
+D3			2020.6.19
+循环
+while/until  do			for   in
+(expression).each do |variable[, variable...]| code end
+break 跳出循环		next跳过本次循环
+redo	重新开始最内部循环的该次迭代，不检查循环条件。
+方法
+定义方法可以有默认参数
+方法默认的返回值是最后一个语句的值
+参数数量可变(*test)
+alias B A		A的别名是B
+块
+块和函数名相同，块内操作在函数中通过yield调用
+yield可带多个参数，块中{|a,b| statement}
+但是如果方法的最后一个参数前带有 &，那么可以向该方法传递一个块，且这个块可被赋给最后一个参数。
+BEGIN 块按照它们出现的顺序执行。END 块按照它们出现的相反顺序执行。
+
+require
+ $LOAD_PATH << '.' 让 Ruby 知道必须在当前目录中搜索被引用的文件。
+::寻找常量、类、方法（均被视为常量）
+函数名中带有点号，则不需要实例化
+mixins的继承方式
